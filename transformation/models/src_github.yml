@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: github_source      # internal dbt name for the source
+    database: community_pulse_db
+    schema: raw              # Where Python left the data
+    tables:
+      - name: github_issues  # The actual table in Snowflake

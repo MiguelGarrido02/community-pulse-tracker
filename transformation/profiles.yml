@@ -1,0 +1,14 @@
+community_pulse_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+     # Read credentials from env
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: community_pulse_role
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+      schema: analytics  # # Specify dbt schema
+      threads: 4
