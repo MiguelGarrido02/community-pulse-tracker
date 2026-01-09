@@ -87,3 +87,6 @@ if __name__ == "__main__":
     if issues:
         df = pd.DataFrame(issues)
         print(f"\nPreview:\n{df[['title', 'created_at']].head()}")
+        
+        print(f"\nTotal issues fetched: {len(issues)}")
+        print(list(df.columns))
