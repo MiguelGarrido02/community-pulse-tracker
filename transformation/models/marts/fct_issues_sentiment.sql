@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 with staging as (
     -- get the cleaned and typed staging data
     select * from {{ ref('stg_github_issues') }}
