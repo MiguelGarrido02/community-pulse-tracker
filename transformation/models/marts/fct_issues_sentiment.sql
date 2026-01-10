@@ -12,6 +12,8 @@ enriched as (
         issue_id,
         repo_name,
         created_at,
+        updated_at,
+        closed_at,
         title,
         body, -- keep body for sentiment analysis
         
