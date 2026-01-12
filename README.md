@@ -61,8 +61,8 @@ graph LR
 ## How to Run Locally
 **1. Clone repo**
 ``` bash
-git clone [)
-cd TU_REPO
+git clone https://github.com/MiguelGarrido02/community-pulse-tracker.git
+cd community_pulse_tracker
 ```
 **2. Install dependencies**
 ``` bash
